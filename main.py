@@ -1,6 +1,6 @@
 #This is the main file of the Library Management console app
 
-from models import Book
+from models import Book, BookWrapper
 
 def main():
     
@@ -9,7 +9,9 @@ def main():
     year = '1836'
     
     book = Book(author, title, year)
-    print(Book)
+    dct = BookWrapper(book)
+    print(book)
+    print(dct.to_dict())
     
     
 if __name__ == "__main__":
