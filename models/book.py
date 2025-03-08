@@ -6,7 +6,7 @@ class Book:
     
     def __init__(self, author: str, title: str, year: str) -> None:
         """Initializer"""
-        self.id = ...
+        self.id = generate_id()
         self.author = author
         self.title = title
         self.year = year
